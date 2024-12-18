@@ -35,7 +35,7 @@ if __name__ == '__main__':
         Wait(page,5000)
 
         Companylist =[]
-        for n in range(9732):
+        for n in range(1,9732):
             for i in Pagedata.css('div[class="mt-0 mb-std p-std css-mdw3bo css-errlgf"]'):
                 COMName=i.css_first('h2[data-test="employer-short-name"]').text()
                 Location= i.css_first('span[data-test="employer-location"]').text()
