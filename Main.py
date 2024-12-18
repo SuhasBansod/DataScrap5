@@ -72,7 +72,7 @@ if __name__ == '__main__':
                     'Image': IMg,
                 })
 
-            PageButton= page.locator('button[data-test="pagination-link-n"]')
+            PageButton= page.locator(f'"button[data-test="pagination-link-{n}"]")
             
             if PageButton.is_visible():
                 PageButton.click()
